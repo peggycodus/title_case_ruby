@@ -14,4 +14,8 @@ describe('title_case') do
     title_case("fred the dOG looked wEsT").should(eq("Fred the Dog Looked West"))
   end
 
+  it("should always capitalize the first chracter of the sentence") do
+    title_case("tHE first WoRd").should(eq("The First Word"))
+  end
+
 end
